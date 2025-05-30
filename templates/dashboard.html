@@ -5,29 +5,29 @@
 {% block content %}
 <div class="stats-grid">
     <div class="stat-card savings">
-        <div class="stat-label">Tabungan</div>
+        <div class="stat-label">Total</div>
         <div class="stat-value">IDR {{ total_savings|floatformat:0 }}</div>
     </div>
     <div class="stat-card expenses">
-        <div class="stat-label">Total Pengeluaran</div>
+        <div class="stat-label">Total Expenditure</div>
         <div class="stat-value">IDR {{ total_expenses|floatformat:0 }}</div>
     </div>
     <div class="stat-card investment">
-        <div class="stat-label">Total Investasi</div>
+        <div class="stat-label">Total Investment</div>
         <div class="stat-value">IDR {{ total_investment|floatformat:0 }}</div>
     </div>
 </div>
 
 <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px;">
     <div class="card">
-        <h3 style="margin-bottom: 20px;">Histori Transaksi</h3>
+        <h3 style="margin-bottom: 20px;">Historiy transactions</h3>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th>Penerima</th>
-                        <th>Tipe</th>
-                        <th>Tanggal</th>
+                        <th>Receiver"</th>
+                        <th>Type</th>
+                        <th>Date</th>
                         <th>Total</th>
                     </tr>
                 </thead>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="card">
-        <h3 style="margin-bottom: 20px;">Pembayaran & Biaya</h3>
+        <h3 style="margin-bottom: 20px;">Payment and Fee</h3>
         <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                 <div>

@@ -192,7 +192,7 @@
         }
 
         .table-container {
-            background: rgba(255, 255, 255, 0.1);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             padding: 25px;
@@ -321,7 +321,7 @@
         {% if user.is_authenticated %}
         <div class="sidebar">
             <div class="logo">
-                <h2><i class="fas fa-store"></i> ClothesShop.id</h2>
+                <h2><i class="fas fa-store"></i> ClothesShop</h2>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -331,22 +331,22 @@
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'products' %}" class="nav-link {% if request.resolver_match.url_name == 'products' %}active{% endif %}">
-                        <i class="fas fa-tshirt"></i> Data Master
+                        <i class="fas fa-tshirt"></i> Data 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'customers' %}" class="nav-link {% if request.resolver_match.url_name == 'customers' %}active{% endif %}">
-                        <i class="fas fa-users"></i> Administrasi
+                        <i class="fas fa-users"></i> Administrator
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'sales' %}" class="nav-link {% if request.resolver_match.url_name == 'sales' %}active{% endif %}">
-                        <i class="fas fa-shopping-cart"></i> Transaksi
+                        <i class="fas fa-shopping-cart"></i> Transacsitons
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'reports' %}" class="nav-link {% if request.resolver_match.url_name == 'reports' %}active{% endif %}">
-                        <i class="fas fa-chart-bar"></i> Laporan
+                        <i class="fas fa-chart-bar"></i>  Reports and Analytics
                     </a>
                 </li>
             </ul>
@@ -362,7 +362,7 @@
             {% if user.is_authenticated %}
             <div class="header">
                 <div class="header-left">
-                    <h1>PT. Kapzet Teknologi Informasi</h1>
+                    <h1>SevaShop ERP</h1>
                 </div>
                 <div class="header-right">
                     <div class="search-box">
